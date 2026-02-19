@@ -1,0 +1,8 @@
+[
+    {
+        "id": "1",
+        "email": "apietrowicz87@gmail.com",
+        "passwordHash": "a5869f8ba00bc8267a87b5fc72eef6ec:3dec97e88ad3130a2afae6ec8e333d42a33f927b5568c70ac76f3854309dce234c1419de5043cf1b0e949b215d5b1926d5edc50041791ef5a4b1b80c6982ece9",
+        "role": "admin"
+    }
+]

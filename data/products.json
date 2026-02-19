@@ -1,0 +1,147 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "slug": "grzybki-kwieciste",
+            "category": "dekoracje",
+            "images": [
+                "/products/grzybki-1.jpg"
+            ],
+            "name": {
+                "pl": "Grzybki Kwieciste",
+                "se": "Blomstersvampar"
+            },
+            "description": {
+                "pl": "Piękna kompozycja dekoracyjna z ręcznie szytych grzybków. Idealna ozdoba do salonu lub pokoju dziecięcego. Wysokość ok. 20cm.",
+                "se": "Vacker dekorativ komposition av handsydda svampar. Perfekt dekoration för vardagsrummet eller barnrummet. Höjd ca 20cm."
+            },
+            "price": {
+                "PLN": 89,
+                "SEK": 199
+            },
+            "status": "available",
+            "order": 1,
+            "available": true
+        },
+        {
+            "id": "2",
+            "slug": "krolik-marzyciel",
+            "category": "pluszaki",
+            "images": [
+                "/products/krolik-1.jpg"
+            ],
+            "name": {
+                "pl": "Króliczek Marzyciel",
+                "se": "Drömmande Kanin"
+            },
+            "description": {
+                "pl": "Uroczy króliczek z miękkiego aksamitu, zdobiony wstążkami i koronką. Idealny prezent dla dziecka. Wysokość ok. 25cm.",
+                "se": "Söt kanin av mjuk sammet, dekorerad med band och spets. Perfekt present för barn. Höjd ca 25cm."
+            },
+            "price": {
+                "PLN": 129,
+                "SEK": 299
+            },
+            "status": "available",
+            "order": 2,
+            "available": true
+        },
+        {
+            "id": "3",
+            "slug": "grzybki-rozowe",
+            "category": "dekoracje",
+            "images": [
+                "/products/grzybki-2.jpg"
+            ],
+            "name": {
+                "pl": "Grzybki Różowe",
+                "se": "Rosa Svampar"
+            },
+            "description": {
+                "pl": "Delikatne różowe grzybki w grochy na naturalnym plastrze drewna. Bajkowa dekoracja. Wysokość ok. 15cm.",
+                "se": "Delikata rosa svampar med prickar på naturlig träskiva. Sagolik dekoration. Höjd ca 15cm."
+            },
+            "price": {
+                "PLN": 69,
+                "SEK": 159
+            },
+            "salePrice": {
+                "PLN": 49,
+                "SEK": 119
+            },
+            "status": "available",
+            "order": 3,
+            "available": true
+        },
+        {
+            "id": "4",
+            "slug": "mis-sloneczny",
+            "category": "pluszaki",
+            "images": [
+                "/products/mis-1.jpg"
+            ],
+            "name": {
+                "pl": "Miś Słoneczny",
+                "se": "Solnalle"
+            },
+            "description": {
+                "pl": "Wesoły miś w słonecznych kolorach żółci i błękitu, z piękną turkusową kokardą. Wysokość ok. 30cm.",
+                "se": "Glad nalle i soliga färger av gult och ljusblått, med en vacker turkos rosett. Höjd ca 30cm."
+            },
+            "price": {
+                "PLN": 149,
+                "SEK": 349
+            },
+            "status": "available",
+            "order": 4,
+            "available": true
+        },
+        {
+            "id": "5",
+            "slug": "zabki-wiosenne",
+            "category": "pluszaki",
+            "images": [
+                "/products/zabki-1.jpg"
+            ],
+            "name": {
+                "pl": "Żabki Wiosenne",
+                "se": "Vårgrodor"
+            },
+            "description": {
+                "pl": "Urocze żabki z wzorzystych tkanin ze wstążkami. Idealne na prezent. Wysokość ok. 20cm każda.",
+                "se": "Söta grodor av mönstrade tyger med band. Perfekta som present. Höjd ca 20cm vardera."
+            },
+            "price": {
+                "PLN": 59,
+                "SEK": 139
+            },
+            "status": "available",
+            "order": 5,
+            "available": true
+        },
+        {
+            "id": "6",
+            "slug": "tulipany-bukiet",
+            "category": "kwiaty",
+            "images": [
+                "/products/tulipany-1.jpg"
+            ],
+            "name": {
+                "pl": "Bukiet Tulipanów",
+                "se": "Tulpanbukett"
+            },
+            "description": {
+                "pl": "Wieczny bukiet z tulipanów szytych z tkanin. Piękna dekoracja, która nigdy nie zwiędnie. 5 sztuk w bukiecie.",
+                "se": "Evig bukett av tygsydda tulpaner. Vacker dekoration som aldrig vissnar. 5 stycken i buketten."
+            },
+            "price": {
+                "PLN": 79,
+                "SEK": 179
+            },
+            "status": "available",
+            "order": 6,
+            "available": true
+        }
+    ],
+    "orders": []
+}

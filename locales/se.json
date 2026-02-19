@@ -1,0 +1,110 @@
+{
+    "nav": {
+        "products": "Produkter",
+        "about": "Om mig",
+        "faq": "FAQ"
+    },
+    "hero": {
+        "title": "Magic Loop",
+        "subtitle": "Konstnärlig Hantverksstudio",
+        "description": "Jag skapar unika dekorationer och leksaker som ger glädje. Varje knut och stygn är handgjord med största omsorg.",
+        "cta": "Se produkter",
+        "location": "Leverans till Polen och Sverige"
+    },
+    "about": {
+        "title": "Om mig",
+        "badge": "9+ års erfarenhet",
+        "text1": "Hej! Jag heter Anna och har skapat unika handgjorda produkter i 9 år.",
+        "text2": "Jag bor nu i Sverige, men mitt hjärta och mina produkter når kunder i hela Polen och Skandinavien.",
+        "text3": "Varje produkt är unik - från söta nallar och kaniner, genom sagolika svampar, till eleganta tulpaner av tyg.",
+        "feature1": "Handsydda",
+        "feature2": "Med kärlek",
+        "feature3": "PL & SE"
+    },
+    "products": {
+        "title": "Mina produkter",
+        "subtitle": "Klicka på en produkt för att se fler bilder",
+        "orderButton": "Beställ",
+        "currency": "SEK",
+        "categories": {
+            "all": "Alla",
+            "pluszaki": "Mjukdjur",
+            "dekoracje": "Dekorationer",
+            "kwiaty": "Blommor"
+        },
+        "empty": "Inga produkter i denna kategori"
+    },
+    "order": {
+        "title": "Beställ produkt",
+        "subtitle": "Fyll i formuläret så kontaktar jag dig så snart som möjligt",
+        "product": "Produkt",
+        "name": "Namn",
+        "email": "E-post",
+        "phone": "Telefon (valfritt)",
+        "country": "Leveransland",
+        "poland": "Polen",
+        "sweden": "Sverige",
+        "address": "Leveransadress",
+        "message": "Meddelande / kommentarer",
+        "messagePlaceholder": "T.ex. önskad färg, fråga om tillgänglighet...",
+        "gdpr": "Jag godkänner att mina personuppgifter behandlas för att hantera beställningen",
+        "submit": "Skicka förfrågan",
+        "sending": "Skickar...",
+        "thankyou": "Tack!",
+        "oops": "Hoppsan!",
+        "retry": "Försök igen",
+        "success": "Tack! Din förfrågan har skickats. Jag svarar så snart som möjligt!",
+        "error": "Hoppsan! Något gick fel. Försök igen eller kontakta mig direkt."
+    },
+    "faq": {
+        "title": "Vanliga frågor",
+        "items": [
+            {
+                "question": "Hur lång är leveranstiden?",
+                "answer": "Standard leveranstid är 7-14 arbetsdagar. Vid större beställningar kan det ta längre tid - jag informerar alltid om exakt datum."
+            },
+            {
+                "question": "Kan jag beställa produkter i andra färger?",
+                "answer": "Ja! Många produkter kan jag göra i färger enligt dina önskemål. Skriv i formuläret vilka färger du är intresserad av."
+            },
+            {
+                "question": "Hur fungerar leverans till Polen?",
+                "answer": "Jag skickar paket med kurir. Fraktkostnaden beror på beställningens storlek - vi bestämmer det individuellt."
+            },
+            {
+                "question": "Levererar du inom Sverige?",
+                "answer": "Ja! Jag bor i Sverige så lokal leverans är mycket snabb och billig. Personlig upphämtning är möjlig i Stockholm-området."
+            }
+        ]
+    },
+    "footer": {
+        "contact": "Kontakt",
+        "email": "E-post",
+        "rights": "Alla rättigheter förbehållna",
+        "handmade": "Produkter handgjorda med ❤️"
+    },
+    "admin": {
+        "title": "Adminpanel",
+        "login": "Logga in",
+        "password": "Lösenord",
+        "wrongPassword": "Fel lösenord",
+        "logout": "Logga ut",
+        "addProduct": "Lägg till produkt",
+        "editProduct": "Redigera produkt",
+        "deleteProduct": "Ta bort produkt",
+        "save": "Spara",
+        "cancel": "Avbryt",
+        "productName": "Produktnamn",
+        "productDescription": "Beskrivning",
+        "productPrice": "Pris (PLN)",
+        "productPriceSEK": "Pris (SEK)",
+        "productCategory": "Kategori",
+        "productImages": "Bilder",
+        "uploadImages": "Lägg till bilder",
+        "confirmDelete": "Är du säker på att du vill ta bort denna produkt?"
+    },
+    "language": {
+        "switch": "PL",
+        "currency": "PLN"
+    }
+}

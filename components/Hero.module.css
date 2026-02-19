@@ -1,0 +1,140 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+    background-image:
+        linear-gradient(rgba(253, 251, 247, 0.7), rgba(253, 251, 247, 0.8)),
+        url('/design/hero-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.decorations {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.decorations span {
+    position: absolute;
+    font-size: 2.5rem;
+    filter: grayscale(0.2);
+    animation: float 8s ease-in-out infinite;
+}
+
+.deco1 {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.deco2 {
+    top: 15%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.deco3 {
+    bottom: 25%;
+    left: 8%;
+    animation-delay: 2.5s;
+}
+
+.deco4 {
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 3.5s;
+}
+
+.deco5 {
+    top: 35%;
+    left: 5%;
+    animation-delay: 4.5s;
+    font-size: 1.8rem;
+}
+
+.deco6 {
+    top: 30%;
+    right: 5%;
+    animation-delay: 5.5s;
+    font-size: 1.8rem;
+}
+
+.heroContent {
+    text-align: center;
+    max-width: 850px;
+    animation: slideUp 0.8s ease-out;
+    padding: var(--spacing-2xl);
+    background: rgba(253, 251, 247, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: var(--radius-xl);
+}
+
+.title {
+    font-size: 4.5rem;
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: var(--color-gray-700);
+    max-width: 650px;
+    margin: 0 auto var(--spacing-lg);
+    line-height: 1.8;
+}
+
+.location {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: white;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.cta {
+    font-size: 1.1rem;
+    padding: var(--spacing-lg) var(--spacing-3xl);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .decorations span {
+        font-size: 2rem;
+        opacity: 0.4;
+    }
+}

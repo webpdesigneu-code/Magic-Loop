@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "products": "Produkty",
+    "about": "O mnie",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Magic Loop",
+    "subtitle": "Pracownia Rękodzieła Artystycznego",
+    "description": "Tworzę unikalne dekoracje i zabawki, które przynoszą uśmiech. Każdy supełek i ścieg jest wykonany ręcznie z największą starannością.",
+    "cta": "Zobacz produkty",
+    "location": "Wysyłka do Polski i Szwecji"
+  },
+  "about": {
+    "title": "O mnie",
+    "badge": "9+ lat doświadczenia",
+    "text1": "Cześć! Mam na imię Anna i od 9 lat tworzę unikalne produkty handmade.",
+    "text2": "Obecnie mieszkam w Szwecji, ale moje serce i produkty docierają do klientów w całej Polsce i Skandynawii.",
+    "text3": "Każdy mój produkt to unikat - od uroczych misiów i królików, przez bajkowe grzybki, po eleganckie tulipany z tkanin.",
+    "feature1": "Ręcznie szyte",
+    "feature2": "Z miłością",
+    "feature3": "PL & SE"
+  },
+  "products": {
+    "title": "Moje produkty",
+    "subtitle": "Kliknij na produkt, aby zobaczyć więcej zdjęć",
+    "orderButton": "Zamawiam",
+    "currency": "PLN",
+    "categories": {
+      "all": "Wszystkie",
+      "pluszaki": "Pluszaki",
+      "dekoracje": "Dekoracje",
+      "kwiaty": "Kwiaty"
+    },
+    "empty": "Brak produktów w tej kategorii"
+  },
+  "order": {
+    "title": "Zamów produkt",
+    "subtitle": "Wypełnij formularz, a skontaktuję się z Tobą jak najszybciej",
+    "product": "Produkt",
+    "name": "Imię i nazwisko",
+    "email": "Email",
+    "phone": "Telefon (opcjonalnie)",
+    "country": "Kraj dostawy",
+    "poland": "Polska",
+    "sweden": "Szwecja",
+    "address": "Adres dostawy",
+    "message": "Wiadomość / uwagi",
+    "messagePlaceholder": "Np. preferowany kolor, pytanie o dostępność...",
+    "gdpr": "Wyrażam zgodę na przetwarzanie moich danych osobowych w celu realizacji zamówienia",
+    "submit": "Wyślij zapytanie",
+    "sending": "Wysyłanie...",
+    "thankyou": "Dziękuję!",
+    "oops": "Ups!",
+    "retry": "Spróbuj ponownie",
+    "success": "Dziękuję! Twoje zapytanie zostało wysłane. Odpowiem najszybciej jak to możliwe!",
+    "error": "Ups! Coś poszło nie tak. Proszę spróbuj ponownie lub skontaktuj się bezpośrednio."
+  },
+  "faq": {
+    "title": "Najczęściej zadawane pytania",
+    "items": [
+      {
+        "question": "Jak długo trwa realizacja zamówienia?",
+        "answer": "Standardowy czas realizacji to 7-14 dni roboczych. Przy większych zamówieniach może się wydłużyć - zawsze informuję o dokładnym terminie."
+      },
+      {
+        "question": "Czy można zamówić produkt w innych kolorach?",
+        "answer": "Tak! Wiele produktów mogę wykonać w kolorach według Twojego życzenia. Napisz w formularzu jakie kolory Cię interesują."
+      },
+      {
+        "question": "Jak wygląda wysyłka do Polski?",
+        "answer": "Wysyłam paczki kurierem. Koszt wysyłki zależy od wielkości zamówienia - ustalamy go indywidualnie."
+      },
+      {
+        "question": "Czy wysyłasz do Szwecji?",
+        "answer": "Tak! Mieszkam w Szwecji, więc wysyłka lokalna jest bardzo szybka i tania. Możliwy też odbiór osobisty w okolicach Stockholm."
+      }
+    ]
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "email": "Email",
+    "rights": "Wszelkie prawa zastrzeżone",
+    "handmade": "Produkty wykonane ręcznie z ❤️"
+  },
+  "admin": {
+    "title": "Panel administracyjny",
+    "login": "Zaloguj się",
+    "password": "Hasło",
+    "wrongPassword": "Nieprawidłowe hasło",
+    "logout": "Wyloguj",
+    "addProduct": "Dodaj produkt",
+    "editProduct": "Edytuj produkt",
+    "deleteProduct": "Usuń produkt",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "productName": "Nazwa produktu",
+    "productDescription": "Opis",
+    "productPrice": "Cena (PLN)",
+    "productPriceSEK": "Cena (SEK)",
+    "productCategory": "Kategoria",
+    "productImages": "Zdjęcia",
+    "uploadImages": "Dodaj zdjęcia",
+    "confirmDelete": "Czy na pewno chcesz usunąć ten produkt?"
+  },
+  "language": {
+    "switch": "SE",
+    "currency": "SEK"
+  }
+}
