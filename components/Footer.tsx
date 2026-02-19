@@ -35,6 +35,7 @@ export default function Footer() {
                 <div className={styles.bottom}>
                     <p>
                         © {currentYear} Magic Loop. {t('footer.rights')}.
+                        <a href="/privacy-policy" style={{ marginLeft: '10px', textDecoration: 'underline', color: 'inherit', fontSize: '0.85rem' }}>{t('footer.privacyPolicy')}</a>
                         <a href="/admin" style={{ marginLeft: '10px', textDecoration: 'none', opacity: 0.5 }} title="Admin Panel">🔒</a>
                     </p>
                     <p style={{ marginTop: '5px', fontSize: '0.85rem', opacity: 0.8 }}>

@@ -81,7 +81,16 @@
         "contact": "Kontakt",
         "email": "E-post",
         "rights": "Alla rättigheter förbehållna",
-        "handmade": "Produkter handgjorda med ❤️"
+        "handmade": "Produkter handgjorda med ❤️",
+        "privacyPolicy": "Integritetspolicy"
+    },
+    "cookies": {
+        "text": "Denna webbplats använder cookies för att ge dig den bästa användarupplevelsen.",
+        "button": "Jag accepterar",
+        "policy": "Läs mer"
+    },
+    "privacy": {
+        "title": "Integritetspolicy & Cookies"
     },
     "admin": {
         "title": "Adminpanel",

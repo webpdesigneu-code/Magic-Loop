@@ -10,6 +10,7 @@ export default function AdminPage() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [password, setPassword] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
     const [error, setError] = useState('');
     const [products, setProducts] = useState<Product[]>([]);
     const [orders, setOrders] = useState<Order[]>([]);
@@ -71,20 +72,20 @@ export default function AdminPage() {
     const handleForgotPassword = async (e: FormEvent) => {
         e.preventDefault();
         setError('');
-        
-        try {
-             // Basic email validation
-             if (!email) {
-                 setError('Podaj adres email');
-                 return;
-             }
 
-             const res = await fetch('/api/auth/forgot-password', {
+        try {
+            // Basic email validation
+            if (!email) {
+                setError('Podaj adres email');
+                return;
+            }
+
+            const res = await fetch('/api/auth/forgot-password', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email }),
             });
-            
+
             // Always show success to prevent enumeration
             setResetSent(true);
 
@@ -218,27 +219,35 @@ export default function AdminPage() {
                             className={styles.input}
                             required
                         />
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Hasło"
-                            className={styles.input}
-                            required
-                            style={{marginTop: '10px'}}
-                        />
+                        <div className={styles.passwordWrapper}>
+                            <input
+                                type={showPassword ? "text" : "password"}
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                placeholder="Hasło"
+                                className={styles.input}
+                                required
+                            />
+                            <button
+                                type="button"
+                                onClick={() => setShowPassword(!showPassword)}
+                                className={styles.togglePassword}
+                            >
+                                {showPassword ? '👁️' : '👁️‍🗨️'}
+                            </button>
+                        </div>
 
                         {error && <p className={styles.error}>{error}</p>}
 
                         <button type="submit" className={styles.button}>
                             Zaloguj się
                         </button>
-                        
-                        <button 
-                            type="button" 
+
+                        <button
+                            type="button"
                             className={styles.linkButton}
                             onClick={() => { setAuthMode('forgot'); setError(''); }}
-                            style={{marginTop: '15px', background: 'none', border: 'none', color: '#666', cursor: 'pointer', textDecoration: 'underline'}}
+                            style={{ marginTop: '15px', background: 'none', border: 'none', color: '#666', cursor: 'pointer', textDecoration: 'underline' }}
                         >
                             Zapomniałeś hasła?
                         </button>
@@ -247,7 +256,7 @@ export default function AdminPage() {
                     <form onSubmit={handleForgotPassword} className={styles.loginForm}>
                         <h2>🔑 Resetowanie hasła</h2>
                         <p>Podaj email powiązany z kontem</p>
-                        
+
                         {!resetSent ? (
                             <>
                                 <input
@@ -266,16 +275,16 @@ export default function AdminPage() {
                                 </button>
                             </>
                         ) : (
-                            <div className={styles.successMessage} style={{color: 'green', margin: '20px 0'}}>
+                            <div className={styles.successMessage} style={{ color: 'green', margin: '20px 0' }}>
                                 <p>Jeśli konto istnieje, wysłaliśmy link do resetowania hasła na podany adres.</p>
                             </div>
                         )}
 
-                        <button 
-                            type="button" 
+                        <button
+                            type="button"
                             className={styles.linkButton}
                             onClick={() => { setAuthMode('login'); setError(''); setResetSent(false); }}
-                            style={{marginTop: '15px', background: 'none', border: 'none', color: '#666', cursor: 'pointer', textDecoration: 'underline'}}
+                            style={{ marginTop: '15px', background: 'none', border: 'none', color: '#666', cursor: 'pointer', textDecoration: 'underline' }}
                         >
                             &larr; Wróć do logowania
                         </button>

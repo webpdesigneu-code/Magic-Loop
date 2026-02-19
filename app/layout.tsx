@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/i18n";
+import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   title: "Magic Loop | Unikalne produkty ręcznie robione",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body>
         <LanguageProvider>
           {children}
+          <CookieConsent />
         </LanguageProvider>
       </body>
     </html>

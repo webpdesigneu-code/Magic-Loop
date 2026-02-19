@@ -81,7 +81,16 @@
     "contact": "Kontakt",
     "email": "Email",
     "rights": "Wszelkie prawa zastrzeżone",
-    "handmade": "Produkty wykonane ręcznie z ❤️"
+    "handmade": "Produkty wykonane ręcznie z ❤️",
+    "privacyPolicy": "Polityka prywatności"
+  },
+  "cookies": {
+    "text": "Nasza strona używa plików cookies. Korzystając z niej, zgadzasz się na ich użycie zgodnie z Polityką Prywatności.",
+    "button": "Akceptuję",
+    "policy": "Dowiedz się więcej"
+  },
+  "privacy": {
+    "title": "Polityka Prywatności i Cookies"
   },
   "admin": {
     "title": "Panel administracyjny",
