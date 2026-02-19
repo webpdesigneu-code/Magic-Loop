@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Test123';
 const SESSION_COOKIE = 'handmade-admin-session';
 
 export async function POST(request: NextRequest) {
     try {
         const { password } = await request.json();
+        const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'Test123';
 
         if (password === ADMIN_PASSWORD) {
             const sessionToken = Buffer.from(Date.now().toString() + '-' + Math.random()).toString('base64');
