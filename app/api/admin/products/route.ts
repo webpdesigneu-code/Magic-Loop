@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
+import { revalidatePath } from 'next/cache';
 import { getProducts, addProduct, updateProduct, deleteProduct, Product } from '@/lib/products';
 
 const SESSION_COOKIE = 'handmade-admin-session';
@@ -36,6 +37,7 @@ export async function POST(request: NextRequest) {
     try {
         const body = await request.json();
         const product = addProduct(body as Omit<Product, 'id'>);
+        revalidatePath('/');
         return NextResponse.json({ product });
     } catch (error) {
         console.error('Error adding product:', error);
@@ -62,6 +64,7 @@ export async function PUT(request: NextRequest) {
             return NextResponse.json({ error: 'Product not found' }, { status: 404 });
         }
 
+        revalidatePath('/');
         return NextResponse.json({ product });
     } catch (error) {
         console.error('Error updating product:', error);
@@ -88,6 +91,7 @@ export async function DELETE(request: NextRequest) {
             return NextResponse.json({ error: 'Product not found' }, { status: 404 });
         }
 
+        revalidatePath('/');
         return NextResponse.json({ success: true });
     } catch (error) {
         console.error('Error deleting product:', error);
