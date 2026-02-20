@@ -56,7 +56,7 @@ export async function POST(request: NextRequest) {
                 .jpeg({ quality: 80 })
                 .toFile(filepath);
 
-            uploadedPaths.push(`/products/${filename}`);
+            uploadedPaths.push(`/api/images/products/${filename}`);
         }
 
         if (uploadedPaths.length === 0) {
