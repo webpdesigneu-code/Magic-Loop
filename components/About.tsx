@@ -19,6 +19,7 @@ export default function About() {
                                 fill
                                 style={{ objectFit: 'cover' }}
                                 priority
+                                unoptimized={true}
                             />
                         </div>
                         <div className={styles.badge}>{t('about.badge')}</div>
