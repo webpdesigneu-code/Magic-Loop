@@ -90,7 +90,7 @@ check_command "Build artifacts upload"
 
 # 5. Remote setup
 print_status "Running remote setup..."
-ssh -t $REMOTE_URI "cd $REMOTE_DIR && npm install --production && pm2 reload ecosystem.config.js --update-env || pm2 start ecosystem.config.js"
+ssh -t $REMOTE_URI "cd $REMOTE_DIR && npm install --production && fuser -k 3000/tcp || true && pm2 reload ecosystem.config.js --update-env || pm2 start ecosystem.config.js"
 check_command "Remote setup"
 
 print_status "Deployment complete! Visit http://$VPS_HOST to verify."
