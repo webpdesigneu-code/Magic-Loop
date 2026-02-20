@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslation } from '@/lib/i18n';
 import styles from './About.module.css';
 
@@ -11,8 +12,14 @@ export default function About() {
             <div className="container">
                 <div className={styles.content}>
                     <div className={styles.imageWrapper}>
-                        <div className={styles.imagePlaceholder}>
-                            <span>👩‍🎨</span>
+                        <div className={styles.imageContainer}>
+                            <Image
+                                src="/design/about-me-illustration.png"
+                                alt="Anna - Magic Loop"
+                                fill
+                                style={{ objectFit: 'cover' }}
+                                priority
+                            />
                         </div>
                         <div className={styles.badge}>{t('about.badge')}</div>
                     </div>
