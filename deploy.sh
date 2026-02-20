@@ -78,19 +78,11 @@ else
 fi
 check_command "File upload"
 
-# Upload .next folder (build artifacts)
-print_status "Uploading build artifacts (.next)..."
-if command -v rsync &> /dev/null; then
-    rsync -avz .next $REMOTE_URI:$REMOTE_DIR/
-else
-    scp -r .next $REMOTE_URI:$REMOTE_DIR/
-fi
-check_command "Build artifacts upload"
 
-
+print_status "Deployment complete! Visit http://$VPS_HOST to verify."
 # 5. Remote setup
 print_status "Running remote setup..."
-ssh -t $REMOTE_URI "cd $REMOTE_DIR && npm install --production && fuser -k 3000/tcp || true && pm2 reload ecosystem.config.js --update-env || pm2 start ecosystem.config.js"
+ssh -t $REMOTE_URI "cd $REMOTE_DIR && npm install && npm run build && fuser -k 3000/tcp || true && pm2 reload ecosystem.config.js --update-env || pm2 start ecosystem.config.js"
 check_command "Remote setup"
 
 print_status "Deployment complete! Visit http://$VPS_HOST to verify."
