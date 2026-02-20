@@ -14,7 +14,7 @@ export default function About() {
                     <div className={styles.imageWrapper}>
                         <div className={styles.imageContainer}>
                             <Image
-                                src="/design/about-me-illustration.png"
+                                src="/design/about-me-illustration.jpg"
                                 alt="Anna - Magic Loop"
                                 fill
                                 style={{ objectFit: 'cover' }}
