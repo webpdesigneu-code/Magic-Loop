@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
-import { writeFile, mkdir } from 'fs/promises';
+import { mkdir } from 'fs/promises';
 import path from 'path';
 import { v4 as uuidv4 } from 'uuid';
+import sharp from 'sharp';
 
 const SESSION_COOKIE = 'handmade-admin-session';
 const UPLOAD_DIR = path.join(process.cwd(), 'public', 'products');
@@ -41,15 +42,19 @@ export async function POST(request: NextRequest) {
                 continue;
             }
 
-            // Generate unique filename
-            const ext = file.name.split('.').pop() || 'jpg';
-            const filename = `${uuidv4()}.${ext}`;
+            // Generate unique filename and always enforce .jpg
+            const filename = `${uuidv4()}.jpg`;
             const filepath = path.join(UPLOAD_DIR, filename);
 
-            // Read file buffer and save
+            // Read file buffer
             const bytes = await file.arrayBuffer();
             const buffer = Buffer.from(bytes);
-            await writeFile(filepath, buffer);
+
+            // Compress and resize image using sharp
+            await sharp(buffer)
+                .resize({ width: 1200, withoutEnlargement: true })
+                .jpeg({ quality: 80 })
+                .toFile(filepath);
 
             uploadedPaths.push(`/products/${filename}`);
         }
