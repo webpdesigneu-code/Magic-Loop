@@ -11,16 +11,17 @@
     "cta": "Zobacz produkty",
     "location": "Wysyłka do Polski i Szwecji"
   },
-  "about": {
-    "title": "O mnie",
-    "badge": "9+ lat doświadczenia",
-    "text1": "Cześć! Mam na imię Anna i od 9 lat tworzę unikalne produkty handmade.",
-    "text2": "Obecnie mieszkam w Szwecji, ale moje serce i produkty docierają do klientów w całej Polsce i Skandynawii.",
-    "text3": "Każdy mój produkt to unikat - od uroczych misiów i królików, przez bajkowe grzybki, po eleganckie tulipany z tkanin.",
-    "feature1": "Ręcznie szyte",
-    "feature2": "Z miłością",
-    "feature3": "PL & SE"
-  },
+    "about": {
+        "title": "O mnie",
+        "badge": "9+ lat doświadczenia",
+        "text1": "Cześć! Mam na imię Anna i od 9 lat tworzę unikalne produkty handmade.",
+        "text2": "Obecnie mieszkam w Szwecji, ale moje serce i produkty docierają do klientów w całej Polsce i Skandynawii.",
+        "text3": "Każdy mój produkt to unikat - od uroczych misiów i królików, przez bajkowe grzybki, po eleganckie tulipany z tkanin.",
+        "text4": "Szyję kwiaty z wstążki, tworzę z tego dekoracje, robię pracę z słodkościami, i ubieram butelki z %.",
+        "feature1": "Ręcznie szyte",
+        "feature2": "Z miłością",
+        "feature3": "PL & SE"
+    },
   "products": {
     "title": "Moje produkty",
     "subtitle": "Kliknij na produkt, aby zobaczyć więcej zdjęć",
